@@ -1,0 +1,23 @@
+{
+ "model": "perceiver",
+ "repo": "LM_2021_Perceiver-pytorch",
+ "target_repo": "LM_Dec_Long_Perceiver",
+ "category": "Long",
+ "upstream": "lucidrains/perceiver-pytorch (MIT)",
+ "unified": [
+  "PerceiverLM from perceiver_io.py (as used in 2021_Perceiver_dec_train.py)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-10-19 15:14:43",
+ "smoke": false,
+ "first_ce": 5.542688846588135,
+ "last_ce": 0.03578004986047745,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 13.8,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check"
+}
